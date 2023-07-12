@@ -25,5 +25,6 @@
         respawn="$(arg respawn)">
     <rosparam command="load" 
               file="$(find septentrio_gnss_driver)/config/$(arg param_file_name).yaml" />
+    <remap from="navsatfix" to="ublox/fix" />
   </node>
 </launch>
