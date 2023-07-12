@@ -6,7 +6,7 @@ device: tcp://192.168.3.1:28784
 
 serial:
   baudrate: 921600
-  rx_serial_port: USB1
+  rx_serial_port: ttyACM0
   hw_flow_control: off
 
 login:
@@ -37,7 +37,7 @@ use_ros_axis_orientation: true
 
 receiver_type: gnss
 
-multi_antenna: false
+multi_antenna: true
 
 datum: Default
 
@@ -92,7 +92,7 @@ rtk_settings:
 
 publish:
   # For both GNSS and INS Rxs
-  navsatfix: false
+  navsatfix: true
   gpsfix: true
   gpgga: false
   gprmc: false
